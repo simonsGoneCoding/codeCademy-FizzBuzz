@@ -15,4 +15,23 @@
     }
     
 
+//for and foreach: 
+    $output = []; 
 
+    for($i=1; $i<101; $i++){
+        if($i % 3 === 0 && $i % 5 === 0){
+            array_push($output, "FizzBuzz"); 
+        }elseif($i % 3 === 0){
+            array_push($output, "Fizz");
+        }elseif($i % 5 === 0){
+            array_push($output, "Buzz");
+        }else{
+            array_push($output, "$i");
+        }
+    }
+
+    foreach($output as $item){
+        echo "$item\n";
+    }
+
+    
